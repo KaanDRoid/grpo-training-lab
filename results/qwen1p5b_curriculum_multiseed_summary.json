@@ -1,0 +1,122 @@
+{
+  "by_operand_digits": {
+    "7": {
+      "delta_accuracy_run_level": {
+        "ci95_high": 0.0368239772895834,
+        "ci95_low": -0.022935088400694487,
+        "mean": 0.006944444444444457,
+        "runs": 3,
+        "sample_std": 0.012028130608117225,
+        "standard_error": 0.006944444444444457
+      },
+      "pooled_baseline_correct": 111,
+      "pooled_samples": 144,
+      "pooled_trained_correct": 112
+    },
+    "8": {
+      "delta_accuracy_run_level": {
+        "ci95_high": 0.04797193186875004,
+        "ci95_low": -0.1313052652020834,
+        "mean": -0.041666666666666685,
+        "runs": 3,
+        "sample_std": 0.03608439182435163,
+        "standard_error": 0.020833333333333346
+      },
+      "pooled_baseline_correct": 71,
+      "pooled_samples": 144,
+      "pooled_trained_correct": 65
+    }
+  },
+  "method": {
+    "confidence_interval": "two-sided 95% Student-t over independent run deltas",
+    "statistical_unit": "curriculum seed",
+    "warning": "three runs give a very wide pilot interval; pooled samples are descriptive"
+  },
+  "overall": {
+    "delta_accuracy_run_level": {
+      "ci95_high": 0.03650498276891834,
+      "ci95_low": -0.07122720499114057,
+      "mean": -0.017361111111111122,
+      "runs": 3,
+      "sample_std": 0.021684020827772262,
+      "standard_error": 0.012519275262027767
+    },
+    "pooled_baseline_accuracy": 0.6319444444444444,
+    "pooled_baseline_correct": 182,
+    "pooled_delta_accuracy": -0.017361111111111112,
+    "pooled_samples": 288,
+    "pooled_trained_accuracy": 0.6145833333333334,
+    "pooled_trained_correct": 177
+  },
+  "protocol": {
+    "curriculum": {
+      "operand_digits": [
+        7,
+        8
+      ],
+      "steps_per_stage": 12
+    },
+    "eval_seed": 20260904,
+    "generation": {
+      "max_new_tokens": 32,
+      "num_generations": 4,
+      "per_device_prompt_bs": 1,
+      "temperature": 1.0,
+      "top_p": 1.0
+    },
+    "heldout_per_stage": 12,
+    "hf_recompute_behavior_logprobs": true,
+    "learning_rate": 1e-05,
+    "model": ".\\Qwen2.5-1.5B-Instruct",
+    "prompts_per_step": 2,
+    "samples_per_prompt": 4,
+    "steps": 24
+  },
+  "runs": [
+    {
+      "baseline_correct": 57,
+      "delta": 0.0,
+      "max_raw_parity": 0.09096837043762207,
+      "max_raw_parity_mean": 0.004069435875862837,
+      "nonzero_gradient_steps": 9,
+      "peak_vram_gib": 4.8730363845825195,
+      "samples": 96,
+      "seed": 41,
+      "trained_correct": 57
+    },
+    {
+      "baseline_correct": 68,
+      "delta": -0.04166666666666674,
+      "max_raw_parity": 0.25148510932922363,
+      "max_raw_parity_mean": 0.006483300123363733,
+      "nonzero_gradient_steps": 5,
+      "peak_vram_gib": 4.601423263549805,
+      "samples": 96,
+      "seed": 43,
+      "trained_correct": 64
+    },
+    {
+      "baseline_correct": 57,
+      "delta": -0.01041666666666663,
+      "max_raw_parity": 0.21843242645263672,
+      "max_raw_parity_mean": 0.006302718073129654,
+      "nonzero_gradient_steps": 9,
+      "peak_vram_gib": 4.601423263549805,
+      "samples": 96,
+      "seed": 47,
+      "trained_correct": 56
+    }
+  ],
+  "seeds": [
+    41,
+    43,
+    47
+  ],
+  "training": {
+    "max_peak_vram_gib": 4.8730363845825195,
+    "max_raw_parity": 0.25148510932922363,
+    "max_raw_parity_mean": 0.006483300123363733,
+    "nonzero_gradient_steps": 23,
+    "total_steps": 72
+  }
+}

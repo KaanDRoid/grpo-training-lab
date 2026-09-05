@@ -1,0 +1,1143 @@
+{
+  "adapter_path": "results\\curriculum_5d_6d_seed29_adapter",
+  "baseline": {
+    "accuracy": 0.3229166666666667,
+    "by_operand_digits": {
+      "5": {
+        "accuracy": 0.4791666666666667,
+        "correct": 23,
+        "correct_per_prompt": [
+          3,
+          0,
+          4,
+          0,
+          4,
+          0,
+          0,
+          4,
+          4,
+          4,
+          0,
+          0
+        ],
+        "examples": [
+          "144223",
+          "143223",
+          "144223",
+          "144223",
+          "125718",
+          "125718",
+          "125718",
+          "125718"
+        ],
+        "rollout_sha256": "ee47b31f0034a7a5a503385d9542d7d7b68316aff84bf1bc37babdc4be2ecf35",
+        "samples": 48
+      },
+      "6": {
+        "accuracy": 0.16666666666666666,
+        "correct": 8,
+        "correct_per_prompt": [
+          0,
+          4,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "examples": [
+          "1488931",
+          "1488931",
+          "1488931",
+          "1488931",
+          "1155833",
+          "1155833",
+          "1155833",
+          "1155833"
+        ],
+        "rollout_sha256": "6b36a7639d66c070b45176704cb818bc76aafc7e0f68d3e9f51af02f3044c171",
+        "samples": 48
+      }
+    },
+    "correct": 31,
+    "rollout_sha256": "4410b9e3dd879f77b8bf282d95068496e4f13ef8b1fc437305c04c5d35e93fc6",
+    "samples": 96
+  },
+  "delta": {
+    "by_operand_digits": {
+      "5": 0.18749999999999994,
+      "6": 0.39583333333333337
+    },
+    "overall_accuracy": 0.2916666666666667
+  },
+  "experiment": {
+    "curriculum": {
+      "operand_digits": [
+        5,
+        6
+      ],
+      "seed": 29,
+      "steps_per_stage": 12
+    },
+    "eval_batch_size": 4,
+    "eval_seed": 20260904,
+    "generation": {
+      "max_new_tokens": 32,
+      "num_generations": 4,
+      "per_device_prompt_bs": 1,
+      "temperature": 1.0,
+      "top_p": 1.0
+    },
+    "heldout_per_stage": 12,
+    "learning_rate": 1e-05,
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "prompts_per_step": 2,
+    "samples_per_prompt": 4,
+    "steps": 24
+  },
+  "hardware": {
+    "compute_capability": [
+      12,
+      0
+    ],
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "torch": "2.11.0+cu128"
+  },
+  "split": {
+    "heldout_examples": 24,
+    "heldout_pairs": {
+      "5": [
+        {
+          "a": 51969,
+          "b": 92254
+        },
+        {
+          "a": 53494,
+          "b": 72324
+        },
+        {
+          "a": 64011,
+          "b": 17205
+        },
+        {
+          "a": 20314,
+          "b": 72932
+        },
+        {
+          "a": 23020,
+          "b": 36305
+        },
+        {
+          "a": 32332,
+          "b": 63324
+        },
+        {
+          "a": 63364,
+          "b": 15545
+        },
+        {
+          "a": 58893,
+          "b": 14164
+        },
+        {
+          "a": 17145,
+          "b": 47450
+        },
+        {
+          "a": 34171,
+          "b": 93323
+        },
+        {
+          "a": 26250,
+          "b": 80204
+        },
+        {
+          "a": 20639,
+          "b": 84737
+        }
+      ],
+      "6": [
+        {
+          "a": 606076,
+          "b": 882665
+        },
+        {
+          "a": 777884,
+          "b": 377949
+        },
+        {
+          "a": 811941,
+          "b": 460313
+        },
+        {
+          "a": 486047,
+          "b": 363948
+        },
+        {
+          "a": 495814,
+          "b": 657741
+        },
+        {
+          "a": 315881,
+          "b": 721483
+        },
+        {
+          "a": 935724,
+          "b": 461314
+        },
+        {
+          "a": 423793,
+          "b": 497265
+        },
+        {
+          "a": 689902,
+          "b": 968907
+        },
+        {
+          "a": 439157,
+          "b": 613360
+        },
+        {
+          "a": 220874,
+          "b": 205626
+        },
+        {
+          "a": 692851,
+          "b": 850574
+        }
+      ]
+    },
+    "overlap": 0,
+    "training_examples": 48,
+    "training_schedule": [
+      {
+        "a": 34110,
+        "b": 56528
+      },
+      {
+        "a": 34620,
+        "b": 69253
+      },
+      {
+        "a": 11765,
+        "b": 68705
+      },
+      {
+        "a": 45000,
+        "b": 12735
+      },
+      {
+        "a": 28412,
+        "b": 43028
+      },
+      {
+        "a": 91896,
+        "b": 67202
+      },
+      {
+        "a": 45682,
+        "b": 73036
+      },
+      {
+        "a": 85798,
+        "b": 98687
+      },
+      {
+        "a": 89929,
+        "b": 44775
+      },
+      {
+        "a": 98896,
+        "b": 41176
+      },
+      {
+        "a": 52190,
+        "b": 22311
+      },
+      {
+        "a": 20603,
+        "b": 44631
+      },
+      {
+        "a": 24256,
+        "b": 33110
+      },
+      {
+        "a": 29889,
+        "b": 75524
+      },
+      {
+        "a": 72167,
+        "b": 92761
+      },
+      {
+        "a": 16909,
+        "b": 80954
+      },
+      {
+        "a": 73236,
+        "b": 99771
+      },
+      {
+        "a": 37613,
+        "b": 28038
+      },
+      {
+        "a": 47432,
+        "b": 28840
+      },
+      {
+        "a": 46684,
+        "b": 60985
+      },
+      {
+        "a": 78210,
+        "b": 16132
+      },
+      {
+        "a": 56243,
+        "b": 97830
+      },
+      {
+        "a": 29835,
+        "b": 91280
+      },
+      {
+        "a": 57002,
+        "b": 74770
+      },
+      {
+        "a": 623163,
+        "b": 258835
+      },
+      {
+        "a": 741498,
+        "b": 939692
+      },
+      {
+        "a": 780935,
+        "b": 252829
+      },
+      {
+        "a": 408699,
+        "b": 205861
+      },
+      {
+        "a": 537594,
+        "b": 497555
+      },
+      {
+        "a": 938209,
+        "b": 975474
+      },
+      {
+        "a": 875842,
+        "b": 235002
+      },
+      {
+        "a": 474921,
+        "b": 828328
+      },
+      {
+        "a": 696759,
+        "b": 111004
+      },
+      {
+        "a": 488432,
+        "b": 425036
+      },
+      {
+        "a": 715947,
+        "b": 343346
+      },
+      {
+        "a": 772091,
+        "b": 539282
+      },
+      {
+        "a": 689328,
+        "b": 846317
+      },
+      {
+        "a": 297526,
+        "b": 513112
+      },
+      {
+        "a": 943308,
+        "b": 800287
+      },
+      {
+        "a": 766149,
+        "b": 466298
+      },
+      {
+        "a": 610696,
+        "b": 958131
+      },
+      {
+        "a": 741944,
+        "b": 962267
+      },
+      {
+        "a": 306957,
+        "b": 464681
+      },
+      {
+        "a": 388257,
+        "b": 834676
+      },
+      {
+        "a": 310581,
+        "b": 681796
+      },
+      {
+        "a": 683432,
+        "b": 611366
+      },
+      {
+        "a": 106893,
+        "b": 532170
+      },
+      {
+        "a": 181129,
+        "b": 635757
+      }
+    ],
+    "training_schedule_sha256": "05246ce176f28b6b9a29068aae4ddfefbc576c79aaf76e845fc2dedbb1cef36d"
+  },
+  "trained": {
+    "accuracy": 0.6145833333333334,
+    "by_operand_digits": {
+      "5": {
+        "accuracy": 0.6666666666666666,
+        "correct": 32,
+        "correct_per_prompt": [
+          4,
+          0,
+          4,
+          0,
+          4,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "examples": [
+          "144223",
+          "144223",
+          "144223",
+          "144223",
+          "125718",
+          "125718",
+          "125718",
+          "125718"
+        ],
+        "rollout_sha256": "dff8e7c1874374e2976dc5ef43240abb3aec04616cb49d5a4fa1ccacc8b51797",
+        "samples": 48
+      },
+      "6": {
+        "accuracy": 0.5625,
+        "correct": 27,
+        "correct_per_prompt": [
+          4,
+          0,
+          4,
+          0,
+          4,
+          4,
+          0,
+          0,
+          4,
+          3,
+          0,
+          4
+        ],
+        "examples": [
+          "1488741",
+          "1488741",
+          "1488741",
+          "1488741",
+          "1155433",
+          "1155433",
+          "1155433",
+          "1155433"
+        ],
+        "rollout_sha256": "ec76169b35336423145703c55efa79eb29b91cf342ec39da890a96638f3617ac",
+        "samples": 48
+      }
+    },
+    "correct": 59,
+    "rollout_sha256": "88b9a956d1c471f3755d78e4475a08555dac0d480bf6e4ee2efa21a13ba24957",
+    "samples": 96
+  },
+  "training_by_operand_digits": {
+    "5": {
+      "mean_reward": 0.59375,
+      "nonzero_gradient_steps": 6,
+      "steps": 12
+    },
+    "6": {
+      "mean_reward": 0.53125,
+      "nonzero_gradient_steps": 4,
+      "steps": 12
+    }
+  },
+  "training_metrics": [
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 12.561572074890137,
+      "loss": -0.0006667748093605042,
+      "operand_digits": 5,
+      "parity_max": 0.07377147674560547,
+      "parity_mean": 0.0026752965059131384,
+      "parity_p99": 0.05419996753334999,
+      "peak_vram_gib": 2.2567853927612305,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n34110 + 56528 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n34620 + 69253 ="
+      ],
+      "reward_mean": 0.625,
+      "rewards": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "185c48c9601649f44f6d5e09210de1534bfb051192c6c048684fb7034a88d44a",
+      "step": 0
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 5,
+      "parity_max": 0.0018829060718417168,
+      "parity_mean": 0.00027241805219091475,
+      "parity_p99": 0.0018829060718417168,
+      "peak_vram_gib": 2.3312487602233887,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n11765 + 68705 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n45000 + 12735 ="
+      ],
+      "reward_mean": 0.0,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "8ec3bf135b759911971eb6383d22b466b6b30ad753641370b7ce356259b4648a",
+      "step": 1
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 12.882084846496582,
+      "loss": -0.001938946545124054,
+      "operand_digits": 5,
+      "parity_max": 0.09962844848632812,
+      "parity_mean": 0.00762212136760354,
+      "parity_p99": 0.06856421381235123,
+      "peak_vram_gib": 2.3312487602233887,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n28412 + 43028 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n91896 + 67202 ="
+      ],
+      "reward_mean": 0.375,
+      "rewards": [
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "cbcf55b5c2c0fccca818c1d4e3a35726ba28c16ee44e96cc1b7b043b307da02c",
+      "step": 2
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 5,
+      "parity_max": 0.11575621366500854,
+      "parity_mean": 0.010434380732476711,
+      "parity_p99": 0.10873688757419586,
+      "peak_vram_gib": 2.3312487602233887,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n45682 + 73036 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n85798 + 98687 ="
+      ],
+      "reward_mean": 0.5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "3e67219193a312c30d7608a877e1a39a86a7ce5b75a42c775c668676e5739b58",
+      "step": 3
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 5,
+      "parity_max": 0.0023598596453666687,
+      "parity_mean": 0.0002973964437842369,
+      "parity_p99": 0.0023598596453666687,
+      "peak_vram_gib": 2.3312487602233887,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n89929 + 44775 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n98896 + 41176 ="
+      ],
+      "reward_mean": 1.0,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "167812baed8de5934c96450fdd14e4f35a8214c4a1efc71b41da77ac79ef49c9",
+      "step": 4
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 5,
+      "parity_max": 0.0011407695710659027,
+      "parity_mean": 0.00014749464753549546,
+      "parity_p99": 0.0011407695710659027,
+      "peak_vram_gib": 2.3312487602233887,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n52190 + 22311 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n20603 + 44631 ="
+      ],
+      "reward_mean": 1.0,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "4d15759c192041818e64761d2b5e31510f6247690fce922a50aced583888d42c",
+      "step": 5
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 20.25585174560547,
+      "loss": 0.0012046992778778076,
+      "operand_digits": 5,
+      "parity_max": 0.03683850169181824,
+      "parity_mean": 0.004035977181047201,
+      "parity_p99": 0.03422711789608002,
+      "peak_vram_gib": 2.3312487602233887,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n24256 + 33110 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n29889 + 75524 ="
+      ],
+      "reward_mean": 0.625,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "rollout_sha256": "31cfa1133682851736352b4272792d929c14dbdb3d664e182189cc4f5fb0d04d",
+      "step": 6
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 10.278072357177734,
+      "loss": 0.0001750737428665161,
+      "operand_digits": 5,
+      "parity_max": 0.16866350173950195,
+      "parity_mean": 0.01519724726676941,
+      "parity_p99": 0.16866350173950195,
+      "peak_vram_gib": 2.3312487602233887,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n72167 + 92761 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n16909 + 80954 ="
+      ],
+      "reward_mean": 0.375,
+      "rewards": [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "7c8f6e0cd89fd56eb6a3047cb30a09f0377d9cb7abb1788a6959f99fff9b85c9",
+      "step": 7
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 5,
+      "parity_max": 0.00450475886464119,
+      "parity_mean": 0.0004319775616750121,
+      "parity_p99": 0.00450475886464119,
+      "peak_vram_gib": 2.3312487602233887,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n73236 + 99771 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n37613 + 28038 ="
+      ],
+      "reward_mean": 0.5,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "f39b149398d687bad931eb43d719d13062e1dc711dfd1cd52e51c5d88f6bfb5d",
+      "step": 8
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 12.011602401733398,
+      "loss": -0.0025422796607017517,
+      "operand_digits": 5,
+      "parity_max": 0.0758056640625,
+      "parity_mean": 0.004047157242894173,
+      "parity_p99": 0.06658538430929184,
+      "peak_vram_gib": 2.3312487602233887,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n47432 + 28840 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n46684 + 60985 ="
+      ],
+      "reward_mean": 0.75,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "rollout_sha256": "5eafb04301f33ed1b18ecc6028a5237faa6202b4e3c38c13767750ec5d5b6999",
+      "step": 9
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 5,
+      "parity_max": 0.0017685014754533768,
+      "parity_mean": 0.00017069194291252643,
+      "parity_p99": 0.0017685014754533768,
+      "peak_vram_gib": 2.3312487602233887,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n78210 + 16132 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n56243 + 97830 ="
+      ],
+      "reward_mean": 0.5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "a36e726beccb1f1e282c318edec2a6978af7d8562f12df1792e0329b8f477d4d",
+      "step": 10
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 7.691467761993408,
+      "loss": 0.001303069293498993,
+      "operand_digits": 5,
+      "parity_max": 0.04488253593444824,
+      "parity_mean": 0.0009638339979574084,
+      "parity_p99": 0.021293018013238907,
+      "peak_vram_gib": 2.3312487602233887,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n29835 + 91280 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n57002 + 74770 ="
+      ],
+      "reward_mean": 0.875,
+      "rewards": [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "daf5f9b22a3b0456c95dab824534160b12d401b4859ae8798eb18c91c84355f3",
+      "step": 11
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 6,
+      "parity_max": 0.04599219560623169,
+      "parity_mean": 0.004314320627599955,
+      "parity_p99": 0.04599219560623169,
+      "peak_vram_gib": 2.393519878387451,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n623163 + 258835 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n741498 + 939692 ="
+      ],
+      "reward_mean": 0.0,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "d75250d766f686ced72353c7cc39f693f3195a7c29be88332c79b744881a4357",
+      "step": 12
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 25.84201431274414,
+      "loss": 0.0007215365767478943,
+      "operand_digits": 6,
+      "parity_max": 0.011280208826065063,
+      "parity_mean": 0.0010298769921064377,
+      "parity_p99": 0.011280208826065063,
+      "peak_vram_gib": 2.393519878387451,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n780935 + 252829 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n408699 + 205861 ="
+      ],
+      "reward_mean": 0.625,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "81716f4bf4cbbb4df332b48dd33548606ad0834dd15d69394cbe8ad174800095",
+      "step": 13
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 6,
+      "parity_max": 0.006386518478393555,
+      "parity_mean": 0.00044873784645460546,
+      "parity_p99": 0.006386518478393555,
+      "peak_vram_gib": 2.393519878387451,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n537594 + 497555 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n938209 + 975474 ="
+      ],
+      "reward_mean": 0.5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "4bffc01f7e822648b401b2bc9c593f0032e2a04b69b46560c89d6936625fe187",
+      "step": 14
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 14.502191543579102,
+      "loss": -0.010529235005378723,
+      "operand_digits": 6,
+      "parity_max": 0.18418121337890625,
+      "parity_mean": 0.017241865396499634,
+      "parity_p99": 0.15482161939144135,
+      "peak_vram_gib": 2.393519878387451,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n875842 + 235002 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n474921 + 828328 ="
+      ],
+      "reward_mean": 0.25,
+      "rewards": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "rollout_sha256": "81bc6741944df2b263fbf21eaa3aa424e547705e4e7e36f8b0547dc7805b6020",
+      "step": 15
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 14.456158638000488,
+      "loss": 9.879469871520996e-06,
+      "operand_digits": 6,
+      "parity_max": 0.0003630686551332474,
+      "parity_mean": 3.45055123034399e-05,
+      "parity_p99": 0.00031396251870319247,
+      "peak_vram_gib": 2.393519878387451,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n696759 + 111004 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n488432 + 425036 ="
+      ],
+      "reward_mean": 0.875,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "b6984eeed094a6e369f65203a0031be9b7f9bc6c2456d27bfa3a71857c890938",
+      "step": 16
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 6,
+      "parity_max": 0.0014739632606506348,
+      "parity_mean": 0.00011992906365776435,
+      "parity_p99": 0.0014739632606506348,
+      "peak_vram_gib": 2.393519878387451,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n715947 + 343346 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n772091 + 539282 ="
+      ],
+      "reward_mean": 0.5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "50d54ce067c907b2387e0f53edef42054ea42e5d3b214bdb87da8e451e2a923b",
+      "step": 17
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 6,
+      "parity_max": 0.00045026279985904694,
+      "parity_mean": 6.111563561717048e-05,
+      "parity_p99": 0.00045026279985904694,
+      "peak_vram_gib": 2.393519878387451,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n689328 + 846317 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n297526 + 513112 ="
+      ],
+      "reward_mean": 1.0,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "ae05667a1691ae3c2282dd1296d7f9afa369adfa273e809a051f33362cd4fa4a",
+      "step": 18
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 6.841799259185791,
+      "loss": 0.0007294416427612305,
+      "operand_digits": 6,
+      "parity_max": 0.01967930793762207,
+      "parity_mean": 0.0009195214370265603,
+      "parity_p99": 0.014570889994502068,
+      "peak_vram_gib": 2.393519878387451,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n943308 + 800287 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n766149 + 466298 ="
+      ],
+      "reward_mean": 0.625,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "7e9ec9a2dabd193016c80876526fa6231b30769254509f1f4a75c9f8b81c7953",
+      "step": 19
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 6,
+      "parity_max": 0.0011650286614894867,
+      "parity_mean": 0.00015923615137580782,
+      "parity_p99": 0.0011650286614894867,
+      "peak_vram_gib": 2.393519878387451,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n610696 + 958131 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n741944 + 962267 ="
+      ],
+      "reward_mean": 1.0,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "f4d92b5b01e5b9e93ad9b41f6df64ba1ad63b7f06efb534613dd22f64bb07f47",
+      "step": 20
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 6,
+      "parity_max": 0.22880864143371582,
+      "parity_mean": 0.00808723270893097,
+      "parity_p99": 0.11997494101524353,
+      "peak_vram_gib": 2.393519878387451,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n306957 + 464681 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n388257 + 834676 ="
+      ],
+      "reward_mean": 0.5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "b09bc487eecbd40efd8140840c3c44d6fddc2117f2efb6c2047961d5c5e19d33",
+      "step": 21
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 6,
+      "parity_max": 0.0485539436340332,
+      "parity_mean": 0.0022910037077963352,
+      "parity_p99": 0.032381460070610046,
+      "peak_vram_gib": 2.393519878387451,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n310581 + 681796 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n683432 + 611366 ="
+      ],
+      "reward_mean": 0.5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "da9c55ead54b724d91e15b5b4a680a7e469fe94ed2e249425caaadc8f5c12552",
+      "step": 22
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 6,
+      "parity_max": 0.034970641136169434,
+      "parity_mean": 0.008800101466476917,
+      "parity_p99": 0.034970641136169434,
+      "peak_vram_gib": 2.393519878387451,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n106893 + 532170 =",
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n181129 + 635757 ="
+      ],
+      "reward_mean": 0.0,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "2e2bcb5589170c2db2b107b250936ec141a22425a795389471d576d69a681074",
+      "step": 23
+    }
+  ]
+}

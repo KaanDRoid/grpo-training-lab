@@ -1,0 +1,9 @@
+# Native-Windows RTX 50-series environment.
+# Install torch from the official CUDA 12.8 index first:
+#   python -m pip install torch --index-url https://download.pytorch.org/whl/cu128
+transformers>=4.48,<5
+peft>=0.14,<1
+pytest>=8,<10
+safetensors>=0.4,<1
+# PyTorch 2.11 pairs with Triton 3.6. This package is the Windows port; Linux uses `triton`.
+triton-windows>=3.6,<3.7; platform_system == "Windows"

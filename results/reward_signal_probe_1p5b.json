@@ -1,0 +1,161 @@
+{
+  "overall": {
+    "exact_g4": {
+      "groups": 144,
+      "mean_reward": 0.6614583134651184,
+      "mean_within_group_std": 0.14694620668888092,
+      "signal_fraction": 0.2777777910232544,
+      "signal_groups": 40
+    },
+    "exact_g8": {
+      "groups": 144,
+      "mean_reward": 0.6631944179534912,
+      "mean_within_group_std": 0.15965402126312256,
+      "signal_fraction": 0.3472222089767456,
+      "signal_groups": 50
+    },
+    "relative_distance_g4": {
+      "groups": 144,
+      "mean_reward": 0.9811809062957764,
+      "mean_within_group_std": 0.01850721798837185,
+      "signal_fraction": 0.3680555522441864,
+      "signal_groups": 53
+    },
+    "relative_distance_g8": {
+      "groups": 144,
+      "mean_reward": 0.9860789179801941,
+      "mean_within_group_std": 0.02088853344321251,
+      "signal_fraction": 0.4236111044883728,
+      "signal_groups": 61
+    }
+  },
+  "peak_vram_gib": 3.3108859062194824,
+  "per_seed": [
+    {
+      "conditions": {
+        "exact_g4": {
+          "groups": 48,
+          "mean_reward": 0.6197916865348816,
+          "mean_within_group_std": 0.1506677120923996,
+          "signal_fraction": 0.2916666567325592,
+          "signal_groups": 14
+        },
+        "exact_g8": {
+          "groups": 48,
+          "mean_reward": 0.6171875,
+          "mean_within_group_std": 0.15816844999790192,
+          "signal_fraction": 0.3541666567325592,
+          "signal_groups": 17
+        },
+        "relative_distance_g4": {
+          "groups": 48,
+          "mean_reward": 0.9827024340629578,
+          "mean_within_group_std": 0.023524470627307892,
+          "signal_fraction": 0.375,
+          "signal_groups": 18
+        },
+        "relative_distance_g8": {
+          "groups": 48,
+          "mean_reward": 0.9828400015830994,
+          "mean_within_group_std": 0.022525282576680183,
+          "signal_fraction": 0.4375,
+          "signal_groups": 21
+        }
+      },
+      "seed": 53
+    },
+    {
+      "conditions": {
+        "exact_g4": {
+          "groups": 48,
+          "mean_reward": 0.6822916865348816,
+          "mean_within_group_std": 0.13628023862838745,
+          "signal_fraction": 0.25,
+          "signal_groups": 12
+        },
+        "exact_g8": {
+          "groups": 48,
+          "mean_reward": 0.6744791865348816,
+          "mean_within_group_std": 0.14343705773353577,
+          "signal_fraction": 0.3125,
+          "signal_groups": 15
+        },
+        "relative_distance_g4": {
+          "groups": 48,
+          "mean_reward": 0.9757099747657776,
+          "mean_within_group_std": 0.010718309320509434,
+          "signal_fraction": 0.375,
+          "signal_groups": 18
+        },
+        "relative_distance_g8": {
+          "groups": 48,
+          "mean_reward": 0.9853165745735168,
+          "mean_within_group_std": 0.017422648146748543,
+          "signal_fraction": 0.4166666567325592,
+          "signal_groups": 20
+        }
+      },
+      "seed": 59
+    },
+    {
+      "conditions": {
+        "exact_g4": {
+          "groups": 48,
+          "mean_reward": 0.6822916865348816,
+          "mean_within_group_std": 0.15389065444469452,
+          "signal_fraction": 0.2916666567325592,
+          "signal_groups": 14
+        },
+        "exact_g8": {
+          "groups": 48,
+          "mean_reward": 0.6979166865348816,
+          "mean_within_group_std": 0.17735655605793,
+          "signal_fraction": 0.375,
+          "signal_groups": 18
+        },
+        "relative_distance_g4": {
+          "groups": 48,
+          "mean_reward": 0.9851304888725281,
+          "mean_within_group_std": 0.021278871223330498,
+          "signal_fraction": 0.3541666567325592,
+          "signal_groups": 17
+        },
+        "relative_distance_g8": {
+          "groups": 48,
+          "mean_reward": 0.9900801777839661,
+          "mean_within_group_std": 0.0227176696062088,
+          "signal_fraction": 0.4166666567325592,
+          "signal_groups": 20
+        }
+      },
+      "seed": 61
+    }
+  ],
+  "protocol": {
+    "generation": {
+      "max_new_tokens": 32,
+      "num_generations": 8,
+      "per_device_prompt_bs": 1,
+      "temperature": 1.0,
+      "top_p": 1.0
+    },
+    "group_sizes": [
+      4,
+      8
+    ],
+    "model": ".\\Qwen2.5-1.5B-Instruct",
+    "operand_digits": [
+      7,
+      8
+    ],
+    "prompts_per_step": 2,
+    "seeds": [
+      53,
+      59,
+      61
+    ],
+    "selection_data": "training prompts only; no held-out prompts or scores",
+    "steps_per_stage": 12
+  },
+  "rollout_sha256": "df6f558827b592729fc90cd4f515a03b5fe1d1b93a3e693a3a4efe4a2058e392"
+}

@@ -1,0 +1,122 @@
+{
+  "baseline_rollout_sha256": "d567fc5df7d0a854af8c902305cf5b9d144e30c49955ee3824961be60167e162",
+  "conditions": [
+    {
+      "baseline_correct": 56,
+      "by_operand_digits": {
+        "7": {
+          "baseline_correct": 34,
+          "samples": 48,
+          "trained_correct": 35
+        },
+        "8": {
+          "baseline_correct": 22,
+          "samples": 48,
+          "trained_correct": 29
+        }
+      },
+      "condition": "exact_g4",
+      "delta_accuracy": 0.08333333333333326,
+      "delta_correct": 8,
+      "exact_signal_groups": 12,
+      "group_size": 4,
+      "heldout_samples": 96,
+      "max_raw_parity": 0.4125407934188843,
+      "max_raw_parity_mean": 0.008548343554139137,
+      "nonzero_gradient_steps": 11,
+      "peak_vram_gib": 4.955601692199707,
+      "reward_mode": "exact",
+      "signal_groups": 12,
+      "total_prompt_groups": 48,
+      "trained_correct": 64,
+      "training_completions": 192
+    },
+    {
+      "baseline_correct": 56,
+      "by_operand_digits": {
+        "7": {
+          "baseline_correct": 34,
+          "samples": 48,
+          "trained_correct": 34
+        },
+        "8": {
+          "baseline_correct": 22,
+          "samples": 48,
+          "trained_correct": 26
+        }
+      },
+      "condition": "relative_distance_g4",
+      "delta_accuracy": 0.04166666666666663,
+      "delta_correct": 4,
+      "exact_signal_groups": 12,
+      "group_size": 4,
+      "heldout_samples": 96,
+      "max_raw_parity": 0.4125407934188843,
+      "max_raw_parity_mean": 0.011073378846049309,
+      "nonzero_gradient_steps": 13,
+      "peak_vram_gib": 4.601423740386963,
+      "reward_mode": "relative_distance",
+      "signal_groups": 15,
+      "total_prompt_groups": 48,
+      "trained_correct": 60,
+      "training_completions": 192
+    },
+    {
+      "baseline_correct": 56,
+      "by_operand_digits": {
+        "7": {
+          "baseline_correct": 34,
+          "samples": 48,
+          "trained_correct": 34
+        },
+        "8": {
+          "baseline_correct": 22,
+          "samples": 48,
+          "trained_correct": 29
+        }
+      },
+      "condition": "exact_g8",
+      "delta_accuracy": 0.07291666666666663,
+      "delta_correct": 7,
+      "exact_signal_groups": 15,
+      "group_size": 8,
+      "heldout_samples": 96,
+      "max_raw_parity": 0.5434155464172363,
+      "max_raw_parity_mean": 0.00658888416364789,
+      "nonzero_gradient_steps": 12,
+      "peak_vram_gib": 6.516603469848633,
+      "reward_mode": "exact",
+      "signal_groups": 15,
+      "total_prompt_groups": 48,
+      "trained_correct": 63,
+      "training_completions": 384
+    }
+  ],
+  "matched_protocol": {
+    "curriculum": {
+      "operand_digits": [
+        7,
+        8
+      ],
+      "seed": 67,
+      "steps_per_stage": 12
+    },
+    "eval_batch_size": 4,
+    "eval_seed": 20260904,
+    "heldout_per_stage": 12,
+    "hf_recompute_behavior_logprobs": true,
+    "learning_rate": 1e-05,
+    "logprob_backend": "naive",
+    "logprob_chunk_rows": 8,
+    "model": ".\\Qwen2.5-1.5B-Instruct",
+    "prompts_per_step": 2,
+    "steps": 24
+  },
+  "method": {
+    "design": "paired single-seed mechanism pilot",
+    "evaluation": "binary exact match on an identical held-out prompt/sample set",
+    "selection": "candidate mechanisms selected using training-prompt reward variance only",
+    "warning": "one paired seed ranks these mechanisms but does not estimate population uncertainty"
+  },
+  "training_schedule_sha256": "717d47e46114f437c654b1fc70405dd9e5360eb9aebcdff1c5c7f658d527ddc0"
+}

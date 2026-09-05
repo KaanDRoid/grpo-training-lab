@@ -1,0 +1,35 @@
+{
+  "batch": {
+    "active_completion_tokens": 60,
+    "generations_per_prompt": 4,
+    "prompts": 2
+  },
+  "comparison": {
+    "gradient_cosine_similarity": 0.9999956365340551,
+    "gradient_relative_l2_error": 0.00298772338728284,
+    "logprob_max_abs": 0.0,
+    "logprob_mean_abs": 0.0,
+    "memory_reduction_mib": 1293.14990234375,
+    "memory_reduction_ratio": 15.57760053722602,
+    "naive_gradient_l2": 461.1284958992119,
+    "selected_gradient_l2": 461.3324891305812,
+    "selected_slowdown": 1.2738594740213605,
+    "trainable_gradient_max_abs": 0.10373306274414062
+  },
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "naive": {
+    "active_logprob_mean": -0.07390925288200378,
+    "elapsed_ms": 462.9356000223197,
+    "peak_incremental_mib": 1381.85791015625,
+    "trainable_gradient_tensors": 336
+  },
+  "seed": 17,
+  "selected": {
+    "active_logprob_mean": -0.07390925288200378,
+    "elapsed_ms": 589.7148999501951,
+    "peak_incremental_mib": 88.7080078125,
+    "trainable_gradient_tensors": 336
+  },
+  "torch": "2.11.0+cu128"
+}

@@ -1,0 +1,4 @@
+condition,reward_mode,group_size,training_completions,baseline_correct,trained_correct,heldout_samples,delta_correct,delta_accuracy,signal_groups,exact_signal_groups,total_prompt_groups,nonzero_gradient_steps,peak_vram_gib,max_raw_parity,max_raw_parity_mean
+exact_g4,exact,4,192,56,64,96,8,0.08333333333333326,12,12,48,11,4.955601692199707,0.4125407934188843,0.008548343554139137
+relative_distance_g4,relative_distance,4,192,56,60,96,4,0.04166666666666663,15,12,48,13,4.601423740386963,0.4125407934188843,0.011073378846049309
+exact_g8,exact,8,384,56,63,96,7,0.07291666666666663,15,15,48,12,6.516603469848633,0.5434155464172363,0.00658888416364789

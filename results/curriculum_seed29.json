@@ -1,0 +1,947 @@
+{
+  "adapter_path": "results\\curriculum_seed29_adapter",
+  "baseline": {
+    "accuracy": 0.4270833333333333,
+    "by_operand_digits": {
+      "4": {
+        "accuracy": 0.71875,
+        "correct": 23,
+        "correct_per_prompt": [
+          4,
+          4,
+          4,
+          3,
+          0,
+          4,
+          0,
+          4
+        ],
+        "examples": [
+          "12682",
+          "12682",
+          "12682",
+          "12682",
+          "16541",
+          "16541",
+          "16541",
+          "16541"
+        ],
+        "rollout_sha256": "e706f000ea7d5c2b23f8af002955cf432c590012c54d1454761b48b8c7cb7ce0",
+        "samples": 32
+      },
+      "5": {
+        "accuracy": 0.25,
+        "correct": 8,
+        "correct_per_prompt": [
+          0,
+          0,
+          0,
+          1,
+          4,
+          0,
+          0,
+          3
+        ],
+        "examples": [
+          "178594",
+          "178914",
+          "188594",
+          "178934",
+          "143785",
+          "143785",
+          "143785",
+          "143785"
+        ],
+        "rollout_sha256": "3e29a50568c1ee141f35005e1075c71f903c6f21bea50e64c5306e3017981541",
+        "samples": 32
+      },
+      "6": {
+        "accuracy": 0.3125,
+        "correct": 10,
+        "correct_per_prompt": [
+          0,
+          3,
+          0,
+          4,
+          0,
+          0,
+          0,
+          3
+        ],
+        "examples": [
+          "1500074",
+          "1500065",
+          "1500074",
+          "1599074",
+          "846616",
+          "848616",
+          "848616",
+          "848616"
+        ],
+        "rollout_sha256": "3b980d181dbdc3078ce46417a6f4628ee592faf772b78befbfd06aa523e97241",
+        "samples": 32
+      }
+    },
+    "correct": 41,
+    "rollout_sha256": "57ffc719cfa0eefa4c4c0576fbc94a5d98cd055d0949711143dd8cb66e31dfef",
+    "samples": 96
+  },
+  "delta": {
+    "by_operand_digits": {
+      "4": 0.03125,
+      "5": -0.03125,
+      "6": 0.0
+    },
+    "overall_accuracy": 0.0
+  },
+  "experiment": {
+    "curriculum": {
+      "operand_digits": [
+        4,
+        5,
+        6
+      ],
+      "seed": 29,
+      "steps_per_stage": 8
+    },
+    "eval_seed": 20260904,
+    "generation": {
+      "max_new_tokens": 32,
+      "num_generations": 4,
+      "per_device_prompt_bs": 1,
+      "temperature": 1.0,
+      "top_p": 1.0
+    },
+    "heldout_per_stage": 8,
+    "learning_rate": 1e-05,
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "prompts_per_step": 1,
+    "samples_per_prompt": 4,
+    "steps": 24
+  },
+  "hardware": {
+    "compute_capability": [
+      12,
+      0
+    ],
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "torch": "2.11.0+cu128"
+  },
+  "split": {
+    "heldout_examples": 24,
+    "heldout_pairs": {
+      "4": [
+        {
+          "a": 6246,
+          "b": 6436
+        },
+        {
+          "a": 8790,
+          "b": 7751
+        },
+        {
+          "a": 1900,
+          "b": 2289
+        },
+        {
+          "a": 8866,
+          "b": 2627
+        },
+        {
+          "a": 4288,
+          "b": 3791
+        },
+        {
+          "a": 7665,
+          "b": 7670
+        },
+        {
+          "a": 1693,
+          "b": 7111
+        },
+        {
+          "a": 1520,
+          "b": 1893
+        }
+      ],
+      "5": [
+        {
+          "a": 73259,
+          "b": 94735
+        },
+        {
+          "a": 44743,
+          "b": 98992
+        },
+        {
+          "a": 55039,
+          "b": 58255
+        },
+        {
+          "a": 42993,
+          "b": 59476
+        },
+        {
+          "a": 79717,
+          "b": 36985
+        },
+        {
+          "a": 87685,
+          "b": 55164
+        },
+        {
+          "a": 50474,
+          "b": 59658
+        },
+        {
+          "a": 83737,
+          "b": 52394
+        }
+      ],
+      "6": [
+        {
+          "a": 945358,
+          "b": 554516
+        },
+        {
+          "a": 623108,
+          "b": 225508
+        },
+        {
+          "a": 976485,
+          "b": 512232
+        },
+        {
+          "a": 680300,
+          "b": 549745
+        },
+        {
+          "a": 413324,
+          "b": 785738
+        },
+        {
+          "a": 672015,
+          "b": 753919
+        },
+        {
+          "a": 260824,
+          "b": 996474
+        },
+        {
+          "a": 708840,
+          "b": 677029
+        }
+      ]
+    },
+    "overlap": 0,
+    "training_examples": 24,
+    "training_schedule": [
+      {
+        "a": 4013,
+        "b": 6816
+      },
+      {
+        "a": 4077,
+        "b": 8406
+      },
+      {
+        "a": 1220,
+        "b": 8338
+      },
+      {
+        "a": 5375,
+        "b": 1341
+      },
+      {
+        "a": 3301,
+        "b": 5128
+      },
+      {
+        "a": 8150,
+        "b": 5460
+      },
+      {
+        "a": 8879,
+        "b": 5346
+      },
+      {
+        "a": 4897,
+        "b": 6273
+      },
+      {
+        "a": 75395,
+        "b": 29854
+      },
+      {
+        "a": 90187,
+        "b": 95116
+      },
+      {
+        "a": 29103,
+        "b": 48587
+      },
+      {
+        "a": 23232,
+        "b": 64699
+      },
+      {
+        "a": 59694,
+        "b": 26875
+      },
+      {
+        "a": 56865,
+        "b": 84594
+      },
+      {
+        "a": 11375,
+        "b": 58554
+      },
+      {
+        "a": 50629,
+        "b": 86993
+      },
+      {
+        "a": 232164,
+        "b": 451522
+      },
+      {
+        "a": 358279,
+        "b": 146821
+      },
+      {
+        "a": 446901,
+        "b": 149230
+      },
+      {
+        "a": 273438,
+        "b": 128660
+      },
+      {
+        "a": 244838,
+        "b": 664527
+      },
+      {
+        "a": 889756,
+        "b": 550824
+      },
+      {
+        "a": 671078,
+        "b": 715721
+      },
+      {
+        "a": 154797,
+        "b": 711400
+      }
+    ],
+    "training_schedule_sha256": "ba77181f438cbd263afa8835535ec681934e2640364c867b3fdcb68cfaf0a042"
+  },
+  "trained": {
+    "accuracy": 0.4270833333333333,
+    "by_operand_digits": {
+      "4": {
+        "accuracy": 0.75,
+        "correct": 24,
+        "correct_per_prompt": [
+          4,
+          4,
+          4,
+          4,
+          0,
+          4,
+          0,
+          4
+        ],
+        "examples": [
+          "12682",
+          "12682",
+          "12682",
+          "12682",
+          "16541",
+          "16541",
+          "16541",
+          "16541"
+        ],
+        "rollout_sha256": "0d4bbb83731d5836dd18a48e0013d3b886c8e50b56a6345c156ed3f4db82a635",
+        "samples": 32
+      },
+      "5": {
+        "accuracy": 0.21875,
+        "correct": 7,
+        "correct_per_prompt": [
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          3
+        ],
+        "examples": [
+          "178594",
+          "178914",
+          "188594",
+          "178914",
+          "143785",
+          "143785",
+          "143785",
+          "143785"
+        ],
+        "rollout_sha256": "9562ee5af36240d058cc1302b0cb5ad0de3a7215b4de6293acff47ae6032cde4",
+        "samples": 32
+      },
+      "6": {
+        "accuracy": 0.3125,
+        "correct": 10,
+        "correct_per_prompt": [
+          0,
+          4,
+          0,
+          4,
+          0,
+          0,
+          0,
+          2
+        ],
+        "examples": [
+          "1500074",
+          "1500065",
+          "1500074",
+          "1599074",
+          "848616",
+          "848616",
+          "848616",
+          "848616"
+        ],
+        "rollout_sha256": "014c581185ceff4a71c7ad68e59a84a5d48db65751d5d16d9258723744c6de5f",
+        "samples": 32
+      }
+    },
+    "correct": 41,
+    "rollout_sha256": "b7e02e3c04b507916d7da854fcec6c124d2c9fe71d4dff65d0422c4949173cc6",
+    "samples": 96
+  },
+  "training_by_operand_digits": {
+    "4": {
+      "mean_reward": 1.0,
+      "nonzero_gradient_steps": 0,
+      "steps": 8
+    },
+    "5": {
+      "mean_reward": 0.15625,
+      "nonzero_gradient_steps": 1,
+      "steps": 8
+    },
+    "6": {
+      "mean_reward": 0.25,
+      "nonzero_gradient_steps": 0,
+      "steps": 8
+    }
+  },
+  "training_metrics": [
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 4,
+      "parity_max": 6.218580529093742e-05,
+      "parity_mean": 2.0241848687874153e-05,
+      "peak_vram_gib": 1.5809440612792969,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n4013 + 6816 ="
+      ],
+      "reward_mean": 1.0,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "08ba0ac8db7381e3089be1aaa301d3257767bc8fd881d3923f2fd16afc5b79ec",
+      "step": 0
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 4,
+      "parity_max": 0.0011458024382591248,
+      "parity_mean": 0.00021147826919332147,
+      "peak_vram_gib": 1.655407428741455,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n4077 + 8406 ="
+      ],
+      "reward_mean": 1.0,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "c6b01ba895ee94d700efcc2136039d59c09d33133107b46be54b2f7340c22cb7",
+      "step": 1
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 4,
+      "parity_max": 1.5342957340180874e-06,
+      "parity_mean": 1.0351319588153274e-06,
+      "peak_vram_gib": 1.655407428741455,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n1220 + 8338 ="
+      ],
+      "reward_mean": 1.0,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "52cb67a73542d73c51dbcb36b6e54960c041033f9011056cb5615a55db104fed",
+      "step": 2
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 4,
+      "parity_max": 0.00019883224740624428,
+      "parity_mean": 4.111013186047785e-05,
+      "peak_vram_gib": 1.655407428741455,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n5375 + 1341 ="
+      ],
+      "reward_mean": 1.0,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "53fdfb87f513ac81923cfb7a534ac2f6ef3ef91929674de893d2da651fdcf060",
+      "step": 3
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 4,
+      "parity_max": 6.311119068413973e-05,
+      "parity_mean": 2.1861251298105344e-05,
+      "peak_vram_gib": 1.655407428741455,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n3301 + 5128 ="
+      ],
+      "reward_mean": 1.0,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "eac8597e551e177b5ea493a660bacfb7c609276e295e0c9103253bed392ccc3b",
+      "step": 4
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 4,
+      "parity_max": 5.2478164434432983e-05,
+      "parity_mean": 1.0072924851556309e-05,
+      "peak_vram_gib": 1.655407428741455,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n8150 + 5460 ="
+      ],
+      "reward_mean": 1.0,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "709318c6fcf6a269c2cc612fb7be40ffdb266a99670325d722cd5f1084cd646a",
+      "step": 5
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 4,
+      "parity_max": 5.826540291309357e-05,
+      "parity_mean": 1.0815831046784297e-05,
+      "peak_vram_gib": 1.655407428741455,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n8879 + 5346 ="
+      ],
+      "reward_mean": 1.0,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "5ec05b4111678d1b986291fc828d4f92dc2fbabd3d01fd9c2a5b1edd61cf7233",
+      "step": 6
+    },
+    {
+      "curriculum_stage": 0,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 4,
+      "parity_max": 4.06140461564064e-05,
+      "parity_mean": 1.1655974049062934e-05,
+      "peak_vram_gib": 1.655407428741455,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n4897 + 6273 ="
+      ],
+      "reward_mean": 1.0,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "9e91dfc11d6e521453a648b3cfd0652a9e2d9cd13746f56b4e087b38de8a811a",
+      "step": 7
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 5,
+      "parity_max": 0.027556657791137695,
+      "parity_mean": 0.004250398837029934,
+      "peak_vram_gib": 1.6875157356262207,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n75395 + 29854 ="
+      ],
+      "reward_mean": 0.0,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "6190e66e3fee52c0a8f7928720aecc5c0eefa7ee3986d3c96a99bc6345da4293",
+      "step": 8
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 5,
+      "parity_max": 0.05043017864227295,
+      "parity_mean": 0.005745381582528353,
+      "peak_vram_gib": 1.6875157356262207,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n90187 + 95116 ="
+      ],
+      "reward_mean": 0.0,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "4ed0658c4305842aa9fdeeda59256fc32f345c3354f32f56ebfc5e8722671959",
+      "step": 9
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 26.289560317993164,
+      "loss": 3.6850571632385254e-05,
+      "operand_digits": 5,
+      "parity_max": 0.013382196426391602,
+      "parity_mean": 0.0014748964458703995,
+      "peak_vram_gib": 1.6875157356262207,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n29103 + 48587 ="
+      ],
+      "reward_mean": 0.25,
+      "rewards": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "c913f49cbb78a1e112633bf84dd806b37c7c313dbf09d48554e5f3c0d85405a3",
+      "step": 10
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 5,
+      "parity_max": 0.017116308212280273,
+      "parity_mean": 0.0024229325354099274,
+      "peak_vram_gib": 1.6875157356262207,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n23232 + 64699 ="
+      ],
+      "reward_mean": 0.0,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "08e4f37e432c720fcc2efe0a7c342fb70e38a36c36624ce2cad0c8c0c2561640",
+      "step": 11
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 5,
+      "parity_max": 0.014025002717971802,
+      "parity_mean": 0.0029472154565155506,
+      "peak_vram_gib": 1.6875157356262207,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n59694 + 26875 ="
+      ],
+      "reward_mean": 0.0,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "11865d158c99358e46df5a213d08c23e454da959255419666808a02b32202cf1",
+      "step": 12
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 5,
+      "parity_max": 0.00032119639217853546,
+      "parity_mean": 9.355168731417507e-05,
+      "peak_vram_gib": 1.6875157356262207,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n56865 + 84594 ="
+      ],
+      "reward_mean": 1.0,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "dd3b6e625a4e0e3e656150610771ace2f02f328198728a61c8390d189226fa5d",
+      "step": 13
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 5,
+      "parity_max": 0.012270689010620117,
+      "parity_mean": 0.0021779981907457113,
+      "peak_vram_gib": 1.687530517578125,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n11375 + 58554 ="
+      ],
+      "reward_mean": 0.0,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "b6849a847865e5eec512a1086dc2741dd051b0ff2d39524501c7053ba353f7e9",
+      "step": 14
+    },
+    {
+      "curriculum_stage": 1,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 5,
+      "parity_max": 0.003133252263069153,
+      "parity_mean": 0.0004746087361127138,
+      "peak_vram_gib": 1.687530517578125,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n50629 + 86993 ="
+      ],
+      "reward_mean": 0.0,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "decb2dda15113c139e7a3b4105c699ff7cd221ac7d740a49ef2639c529eec696",
+      "step": 15
+    },
+    {
+      "curriculum_stage": 2,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 6,
+      "parity_max": 0.00719895213842392,
+      "parity_mean": 0.000610917923040688,
+      "peak_vram_gib": 1.707216739654541,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n232164 + 451522 ="
+      ],
+      "reward_mean": 0.0,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "612bf71009effdf7e4595ee29f99d485312bf6b6963c434d8c016e4fd502831b",
+      "step": 16
+    },
+    {
+      "curriculum_stage": 2,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 6,
+      "parity_max": 0.015620231628417969,
+      "parity_mean": 0.0016493884613737464,
+      "peak_vram_gib": 1.707216739654541,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n358279 + 146821 ="
+      ],
+      "reward_mean": 0.0,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "c2054069ca934b0c48374077f4245682efe042ece5993345802a2dede18d11b0",
+      "step": 17
+    },
+    {
+      "curriculum_stage": 2,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 6,
+      "parity_max": 4.558265209197998e-05,
+      "parity_mean": 1.9502904251567088e-05,
+      "peak_vram_gib": 1.707216739654541,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n446901 + 149230 ="
+      ],
+      "reward_mean": 1.0,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "ef1a1f31bcfae5e1c83c4d3ca25cc7a82c0297aef1331a43686446ff93178da2",
+      "step": 18
+    },
+    {
+      "curriculum_stage": 2,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 6,
+      "parity_max": 0.00013257376849651337,
+      "parity_mean": 2.621647399791982e-05,
+      "peak_vram_gib": 1.707216739654541,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n273438 + 128660 ="
+      ],
+      "reward_mean": 0.0,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "482eacef5523baf8dd97d4ea5f55eaf8fe144673114582816d5cb74373a44d8f",
+      "step": 19
+    },
+    {
+      "curriculum_stage": 2,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 6,
+      "parity_max": 0.07608556747436523,
+      "parity_mean": 0.013510141521692276,
+      "peak_vram_gib": 1.717597484588623,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n244838 + 664527 ="
+      ],
+      "reward_mean": 0.0,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "cfb33a8b8a00a62abb7ca69f74650143939ddb1233c1305bd201d8ee9109b181",
+      "step": 20
+    },
+    {
+      "curriculum_stage": 2,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 6,
+      "parity_max": 0.13755345344543457,
+      "parity_mean": 0.010638391599059105,
+      "peak_vram_gib": 1.7318201065063477,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n889756 + 550824 ="
+      ],
+      "reward_mean": 0.0,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "6b7c04af5d9d22e8c91e90a2a0ba4387dc8d8abd7baa249c64f865c9be73684c",
+      "step": 21
+    },
+    {
+      "curriculum_stage": 2,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 6,
+      "parity_max": 0.03942227363586426,
+      "parity_mean": 0.0037313320208340883,
+      "peak_vram_gib": 1.7318201065063477,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n671078 + 715721 ="
+      ],
+      "reward_mean": 0.0,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rollout_sha256": "3778015a02fb2a615b98b0208fd9a429c140a304b6d86272ca7c5ba9e20f2f95",
+      "step": 22
+    },
+    {
+      "curriculum_stage": 2,
+      "grad_norm": 0.0,
+      "loss": 0.0,
+      "operand_digits": 6,
+      "parity_max": 0.008089765906333923,
+      "parity_mean": 0.001162404427304864,
+      "peak_vram_gib": 1.7318201065063477,
+      "prompts": [
+        "Compute the sum. Reply with ONLY the integer, nothing else.\n154797 + 711400 ="
+      ],
+      "reward_mean": 1.0,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rollout_sha256": "0753bd45ed38b80426a63f940cdd2c93876c1d50a5687fe26d515531ba6a2d4d",
+      "step": 23
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+# Linux/WSL vLLM integration environment. vLLM pins its matching PyTorch/CUDA wheel set.
+vllm==0.26.0
+peft==0.20.0
+pytest>=8,<10
